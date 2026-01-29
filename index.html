@@ -1,232 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shibil Rahman - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; }
-        .hero {
-        background: linear-gradient(to right, #f8f9fa, #e9ecef);
-        padding: 100px 0;
-        text-align: center;
-        }
-        .profile-pic {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 3px solid #007bff;
-        margin-bottom: 20px;
-        }
-        .section-title {
-        font-weight: bold;
-        margin-bottom: 20px;
-        }
-        .btn-custom {
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 25px;
-        padding: 10px 20px;
-        }
-        footer {
-        background: #343a40;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        margin-top: 50px;
-        }
-    </style>
-    </head>
-    <body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shibil Rahman M B | Portfolio</title>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">SHIBIL RAHMAN M B</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-            <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-            <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        </div>
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .navbar-brand { font-weight: 700; letter-spacing: 1px; }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 160px; height: 160px; border-radius: 50%;
+      border: 4px solid #fff; object-fit: cover; margin-bottom: 20px;
+    }
+    .section-title {
+      font-weight: 700; margin-bottom: 30px; position: relative;
+    }
+    .section-title::after {
+      content: ''; width: 60px; height: 4px; background: #0d6efd;
+      display: block; margin-top: 10px;
+    }
+    .badge-skill { margin: 5px; padding: 10px 14px; font-size: 0.85rem; }
+    .card { border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+    footer { background: #111; color: #aaa; padding: 25px 0; }
+    footer a { color: #0d6efd; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">SHIBIL</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-    </nav>
+  </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero" data-aos="fade-up">
-    <div class="container">
-        <img src="images/WhatsApp Image 2025-07-02 at 15.25.18_d5df5df3.jpg" alt="Shibil Rahman" class="profile-pic">
-        <h1 class="display-4">SHIBIL RAHMAN M B</h1>
-        <p class="lead">Web Application Developer</p>
-        <a href="mailto:shibilmulakkal@gmail.com" class="btn btn-custom mt-3">Contact Me</a>
-        <br><br>
-        <a href="images/SHIBIL RAHMAN M B.pdf" class="btn btn-outline-primary" download>Download Resume</a>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container" data-aos="zoom-in">
+    <img src="images/WhatsApp Image 2025-07-02 at 15.25.18_d5df5df3.jpg" class="profile-pic" alt="Shibil Rahman">
+    <h1 class="fw-bold">Shibil Rahman M B</h1>
+    <p class="lead">Web & Flutter Application Developer</p>
+    <a href="images/SHIBIL RAHMAN M B.pdf" download class="btn btn-light btn-lg m-2">Download Resume</a>
+    <a href="#contact" class="btn btn-outline-light btn-lg m-2">Hire Me</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Profile Summary</h2>
+  <p>
+    Client-focused Web & Flutter Application Developer with strong expertise in building responsive,
+    scalable, and high-performance web and mobile applications. Skilled in React.js, Flutter,
+    JavaScript, Bootstrap, Node.js, and modern UI/UX practices. Experienced in end-to-end project
+    lifecycle management, API integration, and deployment.
+  </p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="card p-4 mb-4">
+    <h5 class="fw-bold">Web Developer Intern – Skill Safari</h5>
+    <span class="text-muted">Mar 2023 – Sep 2023</span>
+    <ul class="mt-2">
+      <li>Cloned WhatsApp Web and Facebook Web with responsive layouts.</li>
+      <li>Used Bootstrap, JavaScript, Java, and React.js.</li>
+      <li>Improved performance and cross-browser compatibility.</li>
+    </ul>
+  </div>
+
+  <div class="card p-4">
+    <h5 class="fw-bold">Freelance Web & Flutter Developer</h5>
+    <span class="text-muted">2026 – Present | Remote</span>
+    <ul class="mt-2">
+      <li>Delivered web & Flutter apps for UAE and Indian clients.</li>
+      <li>Built full-stack solutions using React, Node.js, REST APIs.</li>
+      <li>Deployed projects on Vercel and Render.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container py-5" data-aos="zoom-in">
+  <h2 class="section-title">Skills</h2>
+  <div>
+    <span class="badge bg-primary badge-skill">React.js</span>
+    <span class="badge bg-primary badge-skill">Flutter</span>
+    <span class="badge bg-primary badge-skill">JavaScript</span>
+    <span class="badge bg-primary badge-skill">HTML5</span>
+    <span class="badge bg-primary badge-skill">CSS3</span>
+    <span class="badge bg-primary badge-skill">Bootstrap</span>
+    <span class="badge bg-primary badge-skill">Node.js</span>
+    <span class="badge bg-primary badge-skill">MongoDB</span>
+    <span class="badge bg-primary badge-skill">REST APIs</span>
+    <span class="badge bg-primary badge-skill">Figma</span>
+    <span class="badge bg-primary badge-skill">Vercel</span>
+    <span class="badge bg-primary badge-skill">Render</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card p-4 h-100">
+        <h5 class="fw-bold">Phishing Website Detection</h5>
+        <p>ML-based phishing detection with real-time email alerts and Flutter app integration.</p>
+      </div>
     </div>
-    </section>
+    <div class="col-md-6">
+      <div class="card p-4 h-100">
+        <h5 class="fw-bold">Appointment Calendar</h5>
+        <p>React + Material UI calendar with dark mode, filters, and localStorage persistence.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card p-4 h-100">
+        <h5 class="fw-bold">3D Model Viewer</h5>
+        <p>React app to upload and visualize 3D GLB models with interactive rendering.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card p-4 h-100">
+        <h5 class="fw-bold">Flutter PDF Generator</h5>
+        <p>Mobile app generating dynamic PDFs from user input for business use cases.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="container py-5" data-aos="fade-right">
-    <h2 class="section-title">About Me</h2>
-    <p>I am a final-year B.Tech student in Computer Science and Business Systems at JCT College, with a CGPA of 7.5. My focus lies in web application development, machine learning, and business-driven tech solutions.</p>
-    </section>
+<!-- EDUCATION -->
+<section id="education" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Education</h2>
+  <div class="card p-4 mb-3">
+    <h5 class="fw-bold">B.Tech – Computer Science & Business Systems</h5>
+    <p class="mb-1">JCT College of Engineering and Technology, Coimbatore</p>
+    <span class="text-muted">Sep 2021 – May 2025 | CGPA: 7.5</span>
+  </div>
+  <div class="card p-4 mb-3">
+    <h5 class="fw-bold">Higher Secondary (Class XII)</h5>
+    <p class="mb-1">GHSS Cheruthuruthy, Thrissur</p>
+    <span class="text-muted">2019 – 2021 | Score: 76%</span>
+  </div>
+  <div class="card p-4">
+    <h5 class="fw-bold">Secondary (Class X)</h5>
+    <p class="mb-1">GHSS Cheruthuruthy, Thrissur</p>
+    <span class="text-muted">2018 – 2019 | Score: 79%</span>
+  </div>
+</section>
 
-    <!-- Education -->
-    <section id="education" class="container py-5" data-aos="fade-up">
-    <h2 class="section-title">Education</h2>
-    <p><strong>B.Tech in Computer Science and Business Systems</strong> – JCT College of Engineering (2021–2025), CGPA: 7.5</p>
-    <p>GHSS Cheruthuruthy – 76% (Plus Two)</p>
-    <p>GHSS Cheruthuruthy – 76% (SSLC)</p>
-    </section>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Certifications</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">React.js Developer Internship – Skill Safari</li>
+    <li class="list-group-item">Web Technology Full Stack Using Django – Edunet</li>
+    <li class="list-group-item">Networking Essentials – CISCO</li>
+    <li class="list-group-item">Cybersecurity Essentials – CISCO</li>
+    <li class="list-group-item">Introduction to Data Science – IBM</li>
+    <li class="list-group-item">Data Analytics Job Simulation – Deloitte</li>
+    <li class="list-group-item">Encoding–Decoder Architecture – Google Cloud</li>
+    <li class="list-group-item">Introduction to Image Generation – Google Cloud</li>
+    <li class="list-group-item">Introduction to Flutter</li>
+    <li class="list-group-item">Introduction to IoT / SQL / Software Testing</li>
+    <li class="list-group-item">Robotics and AI for Healthcare</li>
+  </ul>
+</section>
 
-     <!-- EXPERIENCE -->
-    <section id="education" class="container py-5" data-aos="fade-up">
-    <h2 class="section-title">Experience</h2>
-    <p><strong>Skill Safari</strong>-( Mar 2023– Sep 2025)</p>
-    <p>WEB DEVELOPER INTERN</p>
-    </section>
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Achievements</h2>
+  <ul>
+    <li>Deloitte Job Simulation – Data Analysis & Forensic Technology</li>
+    <li>Class Topper – Final Year Project Presentation</li>
+    <li>NCC ‘A’ Certificate Holder</li>
+    <li>Attended seminars on Cyber Security, IoT, and Machine Learning</li>
+  </ul>
+</section>
 
+<!-- CONTACT -->
+<section id="contact" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title">Contact</h2>
+  <p><i class="bi bi-envelope"></i> shibilmulakkal@gmail.com</p>
+  <p><i class="bi bi-telephone"></i> +91 9567094491</p>
+  <p><i class="bi bi-geo-alt"></i> Cheruthuruthy, Kerala, India</p>
+  <p>
+    <a href="https://github.com/WROTZ" target="_blank">GitHub</a> | 
+    <a href="https://linkedin.com/in/shibiz" target="_blank">LinkedIn</a>
+  </p>
+</section>
 
-    <!-- Languages Known -->
-    <section id="languages" class="container py-5" data-aos="fade-up">
-    <h2 class="section-title">Languages Known</h2>
-    <ul>
-        <li><strong>English</strong> – Full Professional Proficiency</li>
-        <li><strong>Hindi</strong> – Professional Working Proficiency</li>
-        <li><strong>Tamil</strong> – Professional Working Proficiency</li>
-        <li><strong>Malayalam</strong> – Native or Bilingual Proficiency</li>
-    </ul>
-    </section>
+<footer class="text-center">
+  <p>© 2026 Shibil Rahman M B | Built with ❤️</p>
+</footer>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container py-5" data-aos="zoom-in">
-    <h2 class="section-title">Skills</h2>
-    <ul class="row">
-        <li class="col-md-4">HTML</li>
-        <li class="col-md-4">CSS</li>
-        <li class="col-md-4">JavaScript</li>
-        <li class="col-md-4">Bootstrap</li>
-        <li class="col-md-4">React.js</li>
-        <li class="col-md-4">Python</li>
-        <li class="col-md-4">Visual Studio</li>
-        <li class="col-md-4">Web Developer</li>
-        <li class="col-md-4">Computer Repair Technician</li>
-        <li class="col-md-4">Flutter</li>
-        <li class="col-md-4">Android Studio</li>
-        <li class="col-md-4">Problem Solving</li>
-        <li class="col-md-4">Teamwork</li>
-        <li class="col-md-4">Communication</li>
-        <li class="col-md-4">Data analysis</li>
-        <li class="col-md-4">Data modelling</li>
-        <li class="col-md-4">Tableau</li>
-        <li class="col-md-4">Time Management</li>
-        <li class="col-md-4">Creativity</li>
-        <li class="col-md-4">Excel</li>
-    </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container py-5" data-aos="fade-left">
-    <h2 class="section-title">Projects</h2>
-    <ul>
-        <li><strong>Phishing Website Detection with Real-time Email Alerts to the cyber teams</strong> (Nov 2024 - Feb 2025)</li>
-        <li><strong>Stock Market Prediction using Machine Learning</strong> (Feb 2025 - Apr 2025)</li>
-        <li><strong>Appoinment Calender for Clinic Staff</strong> (jun-2025)</li>
-        <li><strong>3D Model Viewer Web Application</strong> (jul-2025)</li>
-    </ul>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="container py-5" data-aos="zoom-in-up">
-    <h2 class="section-title">Certifications</h2>
-    <ul>
-        <li>React JS Developer Internship Program - Skill Safari</li>
-        <li>Data Analytics job Simulation - Deloitte</li>
-        <li>Introduction to Flutter</li>
-        <li>Web Technology Full Stack Using Django - Edunet</li>
-        <li>Android Application Development</li>
-        <li>Excel for Beginners</li>
-        <li>Introduction to Cyber Security</li>
-        <li>Types of Cyber Security</li>
-        <li>Java Programming</li>
-        <li>Programming Basics</li>
-        <li>Network Security</li>
-        <li>Generative AI for Beginners</li>
-        <li>Robotics and AI</li>
-        <li>AI for Healthcare</li>
-        <li>Networking Essentials - CISCO</li>
-        <li>Cybersecurity Essentials - CISCO</li>
-        <li>Introduction to Data Science - IBM</li>
-        <li>Encoding-Decoder Architecture - Google Cloud</li>
-        <li>Introduction to Image Generation - Google Cloud</li>
-        <li>Introduction to IoT</li>
-        <li>Introduction to Software Testing</li>
-        <li>Introduction to SQL</li>
-    </ul>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="container py-5" data-aos="fade-up">
-    <h2 class="section-title">Achievements</h2>
-    <ul>
-        <li>Successfully Completed a Deloitte Job Simulation on Data Analysis and Forensic Technology.</li>
-        <li>Class Topper in Final Year Project Presentation</li>
-        <li>NCC A Certificate Exam Completed</li>
-        <li>Web Developer Internship in Skill Safari – Cloned WhatsApp Web, Facebook Web, and more using Bootstrap, JavaScript, and React.js</li>
-        <li>Completed Web Technology using Django, Bootstrap, JavaScript, HTML, CSS from Edunet</li>
-        <li>Attended Technical Seminar on Cybersecurity,Internet of things(IoT) and Machine Learninng</li>
-    </ul>
-    </section>
-
-    <!-- Interests Section -->
-    <section id="interests" class="container py-5" data-aos="fade-up">
-    <h2 class="section-title">Interests</h2>
-    <ul>
-        <li>Problem Solving</li>
-        <li>Teamwork</li>
-        <li>Communication</li>
-        <li>Theatre</li>
-        <li>Travel</li>
-    </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container py-5" data-aos="fade-in">
-    <h2 class="section-title">Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:shibilmulakkal@gmail.com">shibilmulakkal@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="https://wa.me/919567094491" target="_blank">+91 9567094491 (WhatsApp)</a></p>
-    <p><strong>Location:</strong> Cheruthuruthy, India</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shibiz" target="_blank">linkedin.com/in/shibiz</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/WROTZ" target="_blank">github.com/WROTZ</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-    &copy; 2025 SHIBIL RAHMAN M B. All Rights Reserved.
-    </footer>
-
-<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<script>AOS.init();</script>
 
 </body>
 </html>
-
-
-
-
