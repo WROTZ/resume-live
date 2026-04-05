@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Shibil Rahman M B</title>
+  <meta
+    name="description"
+    content="Project case studies by Shibil Rahman M B, covering machine learning, React.js, Flutter, 3D web interfaces, and business websites."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="projects">
+  <div class="page-bg" aria-hidden="true">
+    <canvas class="bg-canvas"></canvas>
+    <div class="bg-cursor"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="glass-nav-wrap">
+    <nav class="glass-nav container" data-nav>
+      <a class="brand" href="index.html" aria-label="Shibil Rahman M B portfolio home">
+        <span class="brand-mark">SR</span>
+        <span class="brand-copy">
+          <strong>SHIBIL RAHMAN M B</strong>
+          <span>Web &amp; Flutter Application Developer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="nav-group" data-nav-menu>
+        <div class="nav-links">
+          <a href="index.html" data-nav-link="home">Home</a>
+          <a href="works.html" data-nav-link="works">Works</a>
+          <a href="projects.html" data-nav-link="projects">Projects</a>
+          <a href="contact.html" data-nav-link="contact">Contact</a>
+        </div>
+        <a class="button button-secondary nav-cta" href="contact.html">Start a project</a>
+        <div class="theme-switcher" data-theme-switcher></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div class="glass-panel">
+          <p class="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 6H20M4 12H20M4 18H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+            Project case studies
+          </p>
+          <h1>Builds across ML, Flutter, React, 3D interfaces, and business products.</h1>
+          <p class="lead">
+            These projects reflect both experimentation and practical product thinking, from predictive models and security tools to business apps and polished frontend interfaces.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="works.html">View deployed works</a>
+            <a class="button button-secondary" href="contact.html">Discuss a custom build</a>
+          </div>
+        </div>
+
+        <div class="glass-panel page-note">
+          <strong><span data-project-count>6</span> featured projects</strong>
+          <p class="muted">The cards below summarize selected projects and the work delivered in each build.</p>
+          <div class="pill-list">
+            <span>Machine learning</span>
+            <span>Flutter apps</span>
+            <span>React interfaces</span>
+            <span>3D web experiences</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <svg class="section-divider" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 80C130 20 232 20 350 58C486 102 628 114 760 66C886 20 994 16 1190 76" stroke="#8a93ff" stroke-opacity="0.42" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Project collection</p>
+            <h2>Selected technical builds.</h2>
+            <p>From academic work to portfolio-ready products, these projects show the range of frontend, mobile, and ML work I can take from idea to completion.</p>
+          </div>
+        </div>
+        <div class="projects-grid" data-project-list></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <div class="glass-panel domains-panel">
+          <p class="eyebrow">Focus areas</p>
+          <h3>Core directions across the portfolio</h3>
+          <div class="pill-list">
+            <span>Business automation</span>
+            <span>Responsive UI</span>
+            <span>Security tooling</span>
+            <span>Data-driven features</span>
+            <span>Document workflows</span>
+            <span>Visualization</span>
+          </div>
+        </div>
+
+        <div class="glass-panel domains-panel">
+          <p class="eyebrow">What this shows</p>
+          <h3>Range with product thinking</h3>
+          <p class="muted">The mix of project types highlights adaptability across business websites, internal tools, prediction models, mobile utilities, and highly interactive web interfaces.</p>
+          <div class="section-actions">
+            <a class="button button-primary" href="contact.html">Let's build something</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container glass-panel footer-panel">
+      <div>
+        <h3>Selected projects and technical builds.</h3>
+        <p>This page covers ML, Flutter, React, and business-focused projects across different use cases.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/WROTZ" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/shibiz" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

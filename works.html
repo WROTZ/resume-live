@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | Shibil Rahman M B</title>
+  <meta
+    name="description"
+    content="Live deployed websites and client work delivered by Shibil Rahman M B with direct access to published domains."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="works">
+  <div class="page-bg" aria-hidden="true">
+    <canvas class="bg-canvas"></canvas>
+    <div class="bg-cursor"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="glass-nav-wrap">
+    <nav class="glass-nav container" data-nav>
+      <a class="brand" href="index.html" aria-label="Shibil Rahman M B portfolio home">
+        <span class="brand-mark">SR</span>
+        <span class="brand-copy">
+          <strong>SHIBIL RAHMAN M B</strong>
+          <span>Web &amp; Flutter Application Developer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="nav-group" data-nav-menu>
+        <div class="nav-links">
+          <a href="index.html" data-nav-link="home">Home</a>
+          <a href="works.html" data-nav-link="works">Works</a>
+          <a href="projects.html" data-nav-link="projects">Projects</a>
+          <a href="contact.html" data-nav-link="contact">Contact</a>
+        </div>
+        <a class="button button-secondary nav-cta" href="contact.html">Start a project</a>
+        <div class="theme-switcher" data-theme-switcher></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div class="glass-panel">
+          <p class="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3L13.8 9.2L20 11L13.8 12.8L12 19L10.2 12.8L4 11L10.2 9.2L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+            </svg>
+            Client work
+          </p>
+          <h1>Real websites already deployed for real businesses.</h1>
+          <p class="lead">
+            This page highlights published client websites with direct domain links and a short summary of each project.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html">Book a project discussion</a>
+            <a class="button button-secondary" href="projects.html">See project builds</a>
+          </div>
+        </div>
+
+        <div class="glass-panel page-note">
+          <strong><span data-work-count>3</span> live deployments featured</strong>
+          <p class="muted">Each card links directly to the published domain and includes a short project summary.</p>
+          <div class="pill-list">
+            <span>Business websites</span>
+            <span>Service websites</span>
+            <span>Brand websites</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <svg class="section-divider" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 80C130 20 232 20 350 58C486 102 628 114 760 66C886 20 994 16 1190 76" stroke="#6de9ff" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured domains</p>
+            <h2>Published work with direct live access.</h2>
+            <p>The websites below are live and available to view on their published domains.</p>
+          </div>
+        </div>
+        <div class="works-grid" data-work-list></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <div class="glass-panel domains-panel">
+          <p class="eyebrow">Published domains</p>
+          <h3>Quick domain access</h3>
+          <p class="muted">These are the live websites currently featured on this Works page.</p>
+          <div class="domain-list" data-domain-list></div>
+        </div>
+
+        <div class="glass-panel domains-panel">
+          <p class="eyebrow">Delivery mode</p>
+          <h3>How the work is approached</h3>
+          <div class="pill-list">
+            <span>Client discovery</span>
+            <span>UI direction</span>
+            <span>Responsive builds</span>
+            <span>Domain launch</span>
+            <span>Post-launch support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Process</p>
+            <h2>From concept to live domain.</h2>
+          </div>
+        </div>
+
+        <div class="support-grid">
+          <article class="glass-card support-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M12 12L17 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div class="support-copy">
+              <h3>Discovery</h3>
+              <p>Requirements are clarified directly with the client to align business goals, user flow, and conversion priorities.</p>
+            </div>
+          </article>
+
+          <article class="glass-card support-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="14" rx="3" stroke="currentColor" stroke-width="1.8" />
+                <path d="M8 9H16M8 13H13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div class="support-copy">
+              <h3>Design &amp; build</h3>
+              <p>Visual design, layout, frontend structure, and responsive behavior are shaped together to keep the experience cohesive across devices.</p>
+            </div>
+          </article>
+
+          <article class="glass-card support-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 18L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M10 6H19V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <div class="support-copy">
+              <h3>Launch &amp; support</h3>
+              <p>Deployments are pushed live with domain-ready structure, followed by updates, fixes, and ongoing maintenance when needed.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container glass-panel footer-panel">
+      <div>
+        <h3>Live work and published domains.</h3>
+        <p>This page highlights deployed client websites and provides direct access to each live domain.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/WROTZ" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/shibiz" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
